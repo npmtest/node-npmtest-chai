@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-chai/chai/lib/chai/utils/objDisplay.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-chai/chai/lib/chai/interface/expect.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -190,31 +188,31 @@
     </style>
 </head>
 <body>
-<div class="header low">
+<div class="header medium">
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-chai">npmtest-chai (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-chai/chai/lib/chai/utils/objDisplay.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-chai/chai/lib/chai/interface/expect.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">21.43% <small>(3 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">50% <small>(3 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">33.33% <small>(1 / 3)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">21.43% <small>(3 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">50% <small>(3 / 6)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-chai/chai/lib/chai/utils/</a> &#187; objDisplay.js</div>
+    <div class="path"><a href="../../../../../index.html">All files</a> » <a href="index.html">node-npmtest-chai/chai/lib/chai/interface/</a> » expect.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -249,27 +247,7 @@
 33
 34
 35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+36</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -277,6 +255,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -293,85 +274,55 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*!
- * Chai - flag utility
- * Copyright(c) 2012-2014 Jake Luer &lt;jake@alogicalparadox.com&gt;
+ * chai
+ * Copyright(c) 2011-2014 Jake Luer &lt;jake@alogicalparadox.com&gt;
  * MIT Licensed
  */
 &nbsp;
-/*!
- * Module dependancies
- */
+module.exports = function (chai, util) {
+  chai.expect = <span class="fstat-no" title="function not covered">function (val, message) {</span>
+<span class="cstat-no" title="statement not covered">    return new chai.Assertion(val, message);</span>
+  };
 &nbsp;
-var inspect = require('./inspect');
-var config = require('../config');
+  /**
+   * ### .fail(actual, expected, [message], [operator])
+   *
+   * Throw a failure.
+   *
+   * @name fail
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @param {String} operator
+   * @namespace Expect
+   * @api public
+   */
 &nbsp;
-/**
- * ### .objDisplay (object)
- *
- * Determines if an object or an array matches
- * criteria to be inspected in-line for error
- * messages or should be truncated.
- *
- * @param {Mixed} javascript object to inspect
- * @name objDisplay
- * @namespace Utils
- * @api public
- */
-&nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >function (obj) {</span>
-<span class="cstat-no" title="statement not covered" >  var str = inspect(obj)</span>
-    , type = Object.prototype.toString.call(obj);
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  if (config.truncateThreshold &amp;&amp; str.length &gt;= config.truncateThreshold) {</span>
-<span class="cstat-no" title="statement not covered" >    if (type === '[object Function]') {</span>
-<span class="cstat-no" title="statement not covered" >      return !obj.name || obj.name === ''</span>
-        ? '[Function]'
-        : '[Function: ' + obj.name + ']';
-    } else <span class="cstat-no" title="statement not covered" >if (type === '[object Array]') {</span>
-<span class="cstat-no" title="statement not covered" >      return '[ Array(' + obj.length + ') ]';</span>
-    } else <span class="cstat-no" title="statement not covered" >if (type === '[object Object]') {</span>
-<span class="cstat-no" title="statement not covered" >      var keys = Object.keys(obj)</span>
-        , kstr = keys.length &gt; 2
-          ? keys.splice(0, 2).join(', ') + ', ...'
-          : keys.join(', ');
-<span class="cstat-no" title="statement not covered" >      return '{ Object (' + kstr + ') }';</span>
-    } else {
-<span class="cstat-no" title="statement not covered" >      return str;</span>
-    }
-  } else {
-<span class="cstat-no" title="statement not covered" >    return str;</span>
-  }
+  chai.expect.fail = <span class="fstat-no" title="function not covered">function (actual, expected, message, operator) {</span>
+<span class="cstat-no" title="statement not covered">    message = message || 'expect.fail()';</span>
+<span class="cstat-no" title="statement not covered">    throw new chai.AssertionError(message, {</span>
+        actual: actual
+      , expected: expected
+      , operator: operator
+    }, chai.expect.fail);
+  };
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
     <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 21:46:08 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
