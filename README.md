@@ -1,6 +1,6 @@
 # npmtest-chai
 
-#### test coverage for  [chai (v3.5.0)](http://chaijs.com)  [![npm package](https://img.shields.io/npm/v/npmtest-chai.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-chai) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-chai.svg)](https://travis-ci.org/npmtest/node-npmtest-chai)
+#### basic test coverage for  [chai (v3.5.0)](http://chaijs.com)  [![npm package](https://img.shields.io/npm/v/npmtest-chai.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-chai) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-chai.svg)](https://travis-ci.org/npmtest/node-npmtest-chai)
 
 #### BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 
